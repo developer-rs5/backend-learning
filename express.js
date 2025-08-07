@@ -1,9 +1,13 @@
 import App from "express"
 const app = App();
 import {userdata} from "./userdata.js"
-const port = 3000   
+import cors from "cors"
+const port = 3000
 
 app.use(App.json())
+app.use(cors({
+    "origin":"http://localhost:5173"
+}))
 app.get("/", (req,res)=>{
     res.send("Hello World")
 })
