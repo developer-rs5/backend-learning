@@ -42,7 +42,7 @@ const App = () => {
         console.log(error)
         setData(error)
       })
-
+      
   }
   return (
     <div className='mainn'>

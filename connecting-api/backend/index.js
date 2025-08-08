@@ -1,6 +1,6 @@
 import App from "express"
 const app = App();
-import {userdata} from "./userdata.js"
+import {userdata} from "../../userdata.js"
 import cors from "cors"
 const port = 6000
 
@@ -9,7 +9,7 @@ app.use(cors({
     "origin":"http://localhost:5173"
 }))
 app.get("/", (req,res)=>{
-    res.send("Hello World")
+    res.send("Hello hssihs")
 })
 app.get("/json", (req,res)=>{
     res.send({
@@ -47,3 +47,4 @@ app.get("/search", (req,res)=>{
 app.listen(port, ()=>{
     console.log(`server is running on port ${port}`)
 })
+
